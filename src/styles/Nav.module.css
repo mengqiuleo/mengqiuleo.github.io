@@ -1,0 +1,62 @@
+.container {
+  width: 100vw;
+  padding: 25px 60px;
+  display: flex;
+  align-items: center;
+  color: var(--element1);
+}
+
+.signature {
+  font-size: 25px;
+  margin-right: auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  font-size: 22px;
+}
+
+.icon {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  color: var(--element3);
+}
+
+.link {
+  transition: 0.3s;
+}
+
+.link:hover {
+  color: var(--element3);
+}
+
+.mobile {
+  display: none;
+}
+
+.laptop {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .mobile {
+    display: block;
+  }
+
+  .laptop {
+    display: none;
+  }
+
+  .container {
+    padding: 25px 25px;
+  }
+
+  .nav {
+    gap: 13px;
+  }
+}

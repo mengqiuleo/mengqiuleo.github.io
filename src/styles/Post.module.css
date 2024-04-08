@@ -1,0 +1,24 @@
+.post {
+  cursor: pointer;
+  margin-bottom: 35px;
+}
+
+.title {
+  font-size: 18px;
+  color: var(--element1);
+  transition: 0.3s;
+}
+
+.date {
+  font-size: 14px;
+  color: var(--element4);
+  transition: 0.3s;
+}
+
+.post:hover .title {
+  color: var(--element3);
+}
+
+.post:hover .date {
+  color: var(--element5);
+}
