@@ -1,8 +1,8 @@
-**<p align="center">[xiaoy's Blog](https://mengqiuleo.github.io)</p>**
+**<p align="center">[Xiaoy's Blog](https://mengqiuleo.github.io)</p>**
 ====
 
 **<p align="center">一枚前端, 这里记录一些无聊的生活日常~</p>**
-![blog](blog.png)
+![blog](/public/blog.png)
 
 ## 联系方式
 - WeChat：real-pjyOwO
