@@ -1,6 +1,11 @@
-import { format } from 'date-fns';
-import { mdToHtml } from './postTools.js';
+import { format } from 'date-fns'
 
+import { de, en } from './secret'
+import { mdToHtml } from './postTools.js'
+
+const { hash } = window.config
+
+window.encrypt = en
 
 function toQuery(raw) {
   const params = new URLSearchParams();
@@ -18,8 +23,10 @@ function hasBody(method) {
 
 class Github {
   constructor() {
+    console.log(de(hash))
     this.apiBase = 'https://api.github.com';
-    this.token = [ import.meta.env.VITE_GITHUB_ACCESS_TOKEN_PART1 ] // 需拆开
+    // this.token = [ import.meta.env.VITE_GITHUB_ACCESS_TOKEN_PART1 ] // 需拆开
+    this.token = [ de(hash) ];
     this.owner = 'mengqiuleo';
     this.repo = 'mengqiuleo.github.io';
   }

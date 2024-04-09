@@ -11,7 +11,6 @@ import { store } from './store/store'
 import './styles/global.css'
 import './styles/markdown.css'
 
-
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <Provider store={store}>
     <React.StrictMode>
