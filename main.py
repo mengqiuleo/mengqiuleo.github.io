@@ -9,18 +9,18 @@ from github import Github
 from lxml.etree import CDATA
 from marko.ext.gfm import gfm as marko
 
-MD_HEAD = """**<p align="center">[Leeyom's Blog](https://blog.leeyom.top)</p>**
+MD_HEAD = """**<p align="center">[Xiaoy's Blog](https://mengqiuleo.github.io)</p>**
 ====
 
-**<p align="center">用于记录一些幼稚的想法和脑残的瞬间</p>**
-[![](https://raw.githubusercontent.com/superleeyom/blog/main/img/IMG_216.JPEG)](https://blog.leeyom.top)
+**<p align="center">一枚前端, 这里记录一些无聊的生活日常~</p>**
+[![blog](/public/blog.png)](https://mengqiuleo.github.io)
 
 ## 联系方式
-- Twitter：[@super_leeyom](https://twitter.com/super_leeyom)
-- Telegram：[@super_leeyom](https://t.me/super_leeyom)
-- Email：[leeyomwang@163.com](mailto:leeyomwang@163.com)
-- Blog：[https://blog.leeyom.top](https://blog.leeyom.top)
-- RSS：[RSS Feed](https://raw.githubusercontent.com/{repo_name}/master/feed.xml)
+- WeChat：real-pjyOwO
+- QQ：1003346758
+- Blog：[xiaoy's Blog](https://mengqiuleo.github.io)
+- CSDN：[程序媛小y](https://blog.csdn.net/weixin_52834435?spm=1000.2115.3001.5343)
+- Email：[pjy0813@163.com](mailto:pjy0813@163.com)
 """
 
 BACKUP_DIR = "backup"
