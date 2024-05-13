@@ -18,7 +18,6 @@
 - [奇怪的bug: JS数组解构赋值变量存在依赖关系](https://github.com/mengqiuleo/mengqiuleo.github.io/issues/4)--2024-04-06
 - [从 axios 源码学习设计模式](https://github.com/mengqiuleo/mengqiuleo.github.io/issues/3)--2024-04-06
 ## ignore
-- [考研 VS 就业](https://github.com/mengqiuleo/mengqiuleo.github.io/issues/6)--2024-04-09
 - [2022年终总结](https://github.com/mengqiuleo/mengqiuleo.github.io/issues/5)--2024-04-09
 ## 乱写一通
 - [考研 VS 就业](https://github.com/mengqiuleo/mengqiuleo.github.io/issues/6)--2024-04-09
