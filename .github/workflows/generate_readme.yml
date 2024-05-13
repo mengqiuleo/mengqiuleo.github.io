@@ -18,7 +18,7 @@ env:
 
 jobs:
   sync:
-    if: ${{ !startsWith(github.event.label.name, 'ignore') }}
+    if: ${{ !contains(github.event.label.name, 'ignore') }}
     name: Generate README
     runs-on: ubuntu-latest
     steps:
