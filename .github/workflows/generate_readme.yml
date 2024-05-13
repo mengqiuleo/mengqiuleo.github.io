@@ -18,6 +18,7 @@ env:
 
 jobs:
   sync:
+    if: ${{ github.event.label.name != 'ignore' }}
     name: Generate README
     runs-on: ubuntu-latest
     steps:
