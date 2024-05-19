@@ -5,7 +5,7 @@ import { mdToHtml } from './postTools.js'
 
 const { hash } = window.config
 
-window.encrypt = en
+window.encrypt = en // en加密方法，de解密方法
 
 function toQuery(raw) {
   const params = new URLSearchParams();

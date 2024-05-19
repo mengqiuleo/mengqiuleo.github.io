@@ -14,7 +14,7 @@ const Content = () => {
         </p>
         <br/>
         <p>
-          React 和 Vue 都在用, 不过都是一般水平, 之后可能会学一些 Hybrid 混合开发、React Native 的东西. 业余时间也在参与开源, 也买了一些书, 不过都没读多少. 最近对 RSS Reader 很感兴趣
+          React 和 Vue 都在用, 不过都是一般水平, 之后可能会学一些 Hybrid 混合开发、React Native 的东西. 业余时间也在参与开源, 也买了一些书, 不过都没读多少. 最近对《周易》很感兴趣
         </p>
         <br/>
         <p>
@@ -42,8 +42,9 @@ const Content = () => {
             className={utilStyles.textLink}
           >
             Github
-          </a>{' '}
-          and{' '}
+          </a>
+          {/* {' '} */}
+          {/* and{' '}
           <a
             href='https://blog.csdn.net/weixin_52834435?spm=1000.2115.3001.5343'
             rel='noreferrer'
@@ -51,7 +52,7 @@ const Content = () => {
             className={utilStyles.textLink}
           >
             CSDN
-          </a>
+          </a> */}
           
         </p>
         <p>
