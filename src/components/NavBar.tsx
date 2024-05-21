@@ -1,21 +1,99 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import styles from '../styles/Nav.module.css'
 
 const NavBar = ({ setMode, mode }) => {
-  const handleClick = () => {
+
+  const [ position, setPosition ] = useState({ X: 0, Y: 0 })
+  const handleClick = (event: MouseEvent) => {
+
+    const { clientX, clientY } = event
+    setPosition({ X: clientX, Y: clientY })
+
+    // const changeTheme = () => {
+    //   const transition = document.startViewTransition(() => {
+    //     if (mode === 'light') {
+    //       document.documentElement.classList.remove('dark')
+    //     } else {
+    //       document.documentElement.classList.add('dark')
+    //     }
+    //   })
+  
+    //   transition.ready.then(() => {
+    //     const { clientX, clientY } = event
+    //     // 半径
+    //     const radius = Math.hypot(
+    //       Math.max(clientX, innerHeight - clientX),
+    //       Math.max(clientY, innerHeight - clientY)
+    //     )
+
+    //     // const isDark = document.documentElement.classList.contains('dark')
+    //     const isDark = mode === 'dark' ? true : false
+    //     const clipPath = [
+    //       //根据圆心的位置和半径画圆
+    //       `circle(0px at ${clientX}px ${clientY}px)`,
+    //       `circle(${radius}px at ${clientX}px ${clientY}px)`,
+    //     ]
+    //     document.documentElement.animate(
+    //       { clipPath },
+    //       { 
+    //         duration: 500, 
+    //         pseudoElement: isDark
+    //           ? "::view-transition-old(root)"
+    //           : "::view-transition-new(root)"
+    //       }
+    //     )
+    //   })
+    // }
+    // console.log('eve', event)
     setMode((prev) => (prev === 'light' ? 'dark' : 'light'))
     localStorage.setItem('mode', mode === 'light' ? 'dark' : 'light')
+    // changeTheme()
   };
 
   useEffect(() => {
     // toggle HTML theme
-    if (mode === 'light') {
-      document.documentElement.classList.remove('dark')
-    } else {
-      document.documentElement.classList.add('dark')
-    }
+    // if (mode === 'light') {
+    //   document.documentElement.classList.remove('dark')
+    // } else {
+    //   document.documentElement.classList.add('dark')
+    // }
+
+    const transition = document.startViewTransition(() => {
+      if (mode === 'light') {
+        document.documentElement.classList.remove('dark')
+      } else {
+        document.documentElement.classList.add('dark')
+      }
+    })
+
+    transition.ready.then(() => {
+      // const { clientX, clientY } = event
+      // 半径
+      const X = position.X, Y = position.Y
+      const radius = Math.hypot(
+        Math.max(X, innerHeight - X),
+        Math.max(Y, innerHeight - Y)
+      )
+
+      const isDark = document.documentElement.classList.contains('dark')
+      // const isDark = mode === 'dark' ? true : false
+      const clipPath = [
+        //根据圆心的位置和半径画圆
+        `circle(0px at ${X}px ${Y}px)`,
+        `circle(${radius}px at ${X}px ${Y}px)`,
+      ]
+      document.documentElement.animate(
+        { clipPath: isDark ? clipPath.reverse() : clipPath },
+        { 
+          duration: 500, 
+          pseudoElement: isDark
+            ? "::view-transition-old(root)"
+            : "::view-transition-new(root)"
+        }
+      )
+    })
   }, [mode]);
 
   return (

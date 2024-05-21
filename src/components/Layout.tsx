@@ -12,7 +12,8 @@ const Layout = ({ children }) => {
   }, [])
 
   return (
-    <div className='layout' color-mode={mode}>
+    // <div className='layout' color-mode={mode}>
+    <div>
       <main>
         <NavBar setMode={setMode} mode={mode} />
         {children}
