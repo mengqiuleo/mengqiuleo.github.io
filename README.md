@@ -8,6 +8,7 @@
 - WeChat：real-pjyOwO
 - QQ：1003346758
 - Blog：[xiaoy's Blog](https://mengqiuleo.github.io)
+- CSDN：[程序媛小y](https://blog.csdn.net/weixin_52834435?spm=1000.2115.3001.5343)
 - Email：[pjy0813@163.com](mailto:pjy0813@163.com)
 
 ## 最近更新
