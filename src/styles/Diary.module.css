@@ -1,12 +1,16 @@
-.content {
+.container {
   line-height: 29px;
   margin-top: 30px;
   font-size: 18px;
   color: var(--element1);
 }
 
+.section {
+  margin-bottom: 25px;
+}
+
 @media screen and (max-width: 600px) {
-  .content {
+  .container {
     margin-top: 12px;
     font-size: 15px;
   }
