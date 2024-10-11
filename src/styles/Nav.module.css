@@ -43,6 +43,11 @@
   display: block;
 }
 
+.lifeline {
+  fill: currentColor; 
+  stroke: currentColor;
+}
+
 @media screen and (max-width: 600px) {
   .mobile {
     display: block;

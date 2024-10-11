@@ -23,7 +23,7 @@ function hasBody(method) {
 
 class Github {
   constructor() {
-    console.log(de(hash))
+    // console.log(de(hash))
     this.apiBase = 'https://api.github.com';
     // this.token = [ import.meta.env.VITE_GITHUB_ACCESS_TOKEN_PART1 ] // 需拆开
     this.token = [ de(hash) ];

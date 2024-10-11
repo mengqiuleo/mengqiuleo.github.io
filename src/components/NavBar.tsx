@@ -2,6 +2,9 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import styles from '../styles/Nav.module.css'
+import SunIcon from '../svg/sun.svg?react'
+import MoonIcon from '../svg/moon.svg?react'
+import LifeLineIcon from '../svg/lifeline.svg?react'
 
 const NavBar = ({ setMode, mode }) => {
 
@@ -108,6 +111,12 @@ const NavBar = ({ setMode, mode }) => {
             &#xe634;
           </span>
         </Link>
+        <Link to='/diary'>
+          {/* <span className={`iconfont  ${styles.mobile} ${styles.icon}`}>
+            &#xe684;
+          </span> */}
+          <LifeLineIcon className={`${styles.mobile} ${styles.lifeline}`} />
+        </Link>
 
         {/* Laptop Link */}
         <Link to='/' className={`${styles.link} ${styles.laptop}`}>
@@ -115,6 +124,9 @@ const NavBar = ({ setMode, mode }) => {
         </Link>
         <Link to='/blog' className={`${styles.link} ${styles.laptop}`}>
           Blog
+        </Link>
+        <Link to='/diary' className={`${styles.link} ${styles.laptop}`}>
+          Diary
         </Link>
 
         {/* Other Icon */}
@@ -126,9 +138,11 @@ const NavBar = ({ setMode, mode }) => {
         >
           &#xe885;
         </a>
-        <span className={`iconfont ${styles.icon}`} onClick={handleClick}>
+        {/* <span className={`iconfont ${styles.icon}`} onClick={handleClick}>
           &#xe635;
-        </span>
+        </span> */}
+        { mode === 'light' && <SunIcon className={`${styles.icon}`} onClick={handleClick}/>}
+        { mode === 'dark' && <MoonIcon className={`${styles.icon}`} onClick={handleClick}/>}
       </nav>
     </div>
   );
