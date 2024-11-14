@@ -21,6 +21,7 @@
 - [考研 VS 就业](https://github.com/mengqiuleo/mengqiuleo.github.io/issues/6)--2024-04-09
 - [2022年终总结](https://github.com/mengqiuleo/mengqiuleo.github.io/issues/5)--2024-04-09
 ## 技术相关
+- [【原型链】Function & Object 鸡蛋问题](https://github.com/mengqiuleo/mengqiuleo.github.io/issues/8)--2024-10-24
 - [用 Github Issues 搭建个人博客](https://github.com/mengqiuleo/mengqiuleo.github.io/issues/7)--2024-04-11
 - [奇怪的bug_数组解构赋值变量存在依赖关系](https://github.com/mengqiuleo/mengqiuleo.github.io/issues/4)--2024-04-06
 - [从 axios 源码学习设计模式](https://github.com/mengqiuleo/mengqiuleo.github.io/issues/3)--2024-04-06
