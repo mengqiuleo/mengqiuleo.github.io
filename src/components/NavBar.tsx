@@ -8,7 +8,7 @@ import LifeLineIcon from '../svg/lifeline.svg?react'
 
 const NavBar = ({ setMode, mode }) => {
 
-  const [ position, setPosition ] = useState({ X: 0, Y: 0 })
+  const [position, setPosition] = useState({ X: 0, Y: 0 })
   const handleClick = (event: MouseEvent) => {
 
     const { clientX, clientY } = event
@@ -22,7 +22,7 @@ const NavBar = ({ setMode, mode }) => {
     //       document.documentElement.classList.add('dark')
     //     }
     //   })
-  
+
     //   transition.ready.then(() => {
     //     const { clientX, clientY } = event
     //     // 半径
@@ -89,8 +89,8 @@ const NavBar = ({ setMode, mode }) => {
       ]
       document.documentElement.animate(
         { clipPath: isDark ? clipPath.reverse() : clipPath },
-        { 
-          duration: 500, 
+        {
+          duration: 500,
           pseudoElement: isDark
             ? "::view-transition-old(root)"
             : "::view-transition-new(root)"
@@ -125,9 +125,9 @@ const NavBar = ({ setMode, mode }) => {
         <Link to='/blog' className={`${styles.link} ${styles.laptop}`}>
           Blog
         </Link>
-        <Link to='/diary' className={`${styles.link} ${styles.laptop}`}>
+        {/* <Link to='/diary' className={`${styles.link} ${styles.laptop}`}>
           Diary
-        </Link>
+        </Link> */}
 
         {/* Other Icon */}
         <a
@@ -141,8 +141,8 @@ const NavBar = ({ setMode, mode }) => {
         {/* <span className={`iconfont ${styles.icon}`} onClick={handleClick}>
           &#xe635;
         </span> */}
-        { mode === 'light' && <SunIcon className={`${styles.icon}`} onClick={handleClick}/>}
-        { mode === 'dark' && <MoonIcon className={`${styles.icon}`} onClick={handleClick}/>}
+        {mode === 'light' && <SunIcon className={`${styles.icon}`} onClick={handleClick} />}
+        {mode === 'dark' && <MoonIcon className={`${styles.icon}`} onClick={handleClick} />}
       </nav>
     </div>
   );
