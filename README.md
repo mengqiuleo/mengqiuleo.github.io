@@ -12,11 +12,11 @@
 - Email：[pjy0813@163.com](mailto:pjy0813@163.com)
 
 ## 最近更新
+- [2025 年终总结](https://github.com/mengqiuleo/mengqiuleo.github.io/issues/11)--2026-02-17
 - [聊一聊小票打印](https://github.com/mengqiuleo/mengqiuleo.github.io/issues/10)--2025-10-27
 - [2024年终总结](https://github.com/mengqiuleo/mengqiuleo.github.io/issues/9)--2024-12-31
 - [【原型链】Function & Object 鸡蛋问题](https://github.com/mengqiuleo/mengqiuleo.github.io/issues/8)--2024-10-24
 - [用 Github Issues 搭建个人博客](https://github.com/mengqiuleo/mengqiuleo.github.io/issues/7)--2024-04-11
-- [考研 VS 就业](https://github.com/mengqiuleo/mengqiuleo.github.io/issues/6)--2024-04-09
 - [2024年终总结](https://github.com/mengqiuleo/mengqiuleo.github.io/issues/9)--2024-12-31
 - [考研 VS 就业](https://github.com/mengqiuleo/mengqiuleo.github.io/issues/6)--2024-04-09
 - [2022年终总结](https://github.com/mengqiuleo/mengqiuleo.github.io/issues/5)--2024-04-09
@@ -30,5 +30,6 @@
 - [浏览器初渲染/更新过程](https://github.com/mengqiuleo/mengqiuleo.github.io/issues/2)--2024-04-06
 </details>
 
+- [2025 年终总结](https://github.com/mengqiuleo/mengqiuleo.github.io/issues/11)--2026-02-17
 - [2024年终总结](https://github.com/mengqiuleo/mengqiuleo.github.io/issues/9)--2024-12-31
 - [2023年终总结暨秋招总结](https://github.com/mengqiuleo/mengqiuleo.github.io/issues/1)--2024-04-06
